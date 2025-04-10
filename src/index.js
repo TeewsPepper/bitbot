@@ -39,6 +39,15 @@ const commands = [
     name: "ayuda",
     description: "Muestra la ayuda para el registro",
   },
+  {
+    name: "perfil",
+    description: "Muestra la informacion del perfil",
+  },
+  {
+    name: "contribuir",
+    description:
+      "Muestra la informacion para contribuir con el desarrollo del bot",
+  },
 ];
 
 const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
@@ -62,7 +71,23 @@ client.on("interactionCreate", async (interaction) => {
   if (interaction.commandName === "ayuda") {
     await interaction.reply({
       content:
-        "**📌 Pasos para registrarte:**\n1. Verifica tu email\n2. Completa tu perfil con `/perfil`\n3. ¡Listo!",
+        "**📌 Pasos para registrarte:**\n1. Verifica tu email\n2. Completa tu perfil con `/perfil`\n3. Participa en el desarrollo del bot `/contribuir`",
+      ephemeral: true, // ✔️ ESTA ES LA FORMA CORRECTA
+    });
+  }
+
+  if (interaction.commandName === "perfil") {
+    await interaction.reply({
+      content: "Hola como manejamos tu perfil desde la url ",
+      ephemeral: true, // ✔️ ESTA ES LA FORMA CORRECTA
+    });
+  }
+
+  if (interaction.commandName === "contribuir") {
+    await interaction.reply({
+      content: `
+        ** 💻  Pasos para comenzar:** \n 1. Ingresa a el repositorio en github del proyecto   [Repositorio de bitbot](https://github.com/TeewsPepper/bitbot).\n 2. Te recomentando comienza leyendo el readme.md que encontrarar en la parte final de repositorio.\n3. Crear un fork de este repositorio en tu cuenta de github despues una rama personalizada con los cambios que quieres realizar.\n4. Finaliza con un pull request de esto cambios una vez ya funciones de manera correcta.
+      `,
       ephemeral: true, // ✔️ ESTA ES LA FORMA CORRECTA
     });
   }
