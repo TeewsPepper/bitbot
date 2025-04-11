@@ -35,7 +35,7 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado:
 
 1. **Clona el repositorio**:
 
-```bash
+````bash
    git clone https://github.com/TeewsPepper/bitbot.git
    cd bitbot
 
@@ -54,22 +54,22 @@ CANAL_BIENVENIDA_ID=id_del_canal_de_bienvenida
 
 3. Ejecuta el bot:
 
-node index.js
+npm run dev
 
 ## Si todo está correcto, verás en la consola:
 
     ✅ Bot conectado como [tu_bot]
 
- ```   
+````
 
 🧩 Estructura del Proyecto
 
 bitbot/
-├── index.js              # Lógica principal del bot
-├── .env                  # Variables de entorno (no subir a Git)
-├── .gitignore            # Archivos y directorios que no queremos subir al repo     
-├── package.json          # Configuración del proyecto y dependencias
-└── README.md             # Este archivo
+├── index.js # Lógica principal del bot
+├── .env # Variables de entorno (no subir a Git)
+├── .gitignore # Archivos y directorios que no queremos subir al repo  
+├── package.json # Configuración del proyecto y dependencias
+└── README.md # Este archivo
 
 🤝 Contribuciones
 
@@ -80,7 +80,6 @@ Cómo contribuir:
 
     Crea una nueva rama:
 
-    
 ```bash
 git checkout -b mi-nueva-funcionalidad
 
@@ -92,6 +91,7 @@ git checkout -b mi-nueva-funcionalidad
 
     # Abre un pull request desde GitHub.
 ```
+
     💡 Asegúrate de que tus cambios estén bien documentados y enfocados en mejorar la funcionalidad o la claridad del proyecto.
 
 🧠 Nota final
