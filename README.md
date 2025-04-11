@@ -35,20 +35,27 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado:
 
 1. **Clona el repositorio**:
 
-   ```bash
+```bash
    git clone https://github.com/TeewsPepper/bitbot.git
    cd bitbot
-   ```
+```
 
-Instala las dependencias:
+2. Instala las dependencias:
 
+````bash
 npm install
+
 
 Configura el entorno: Duplica el archico .env.template y cambia el nombre a .env:
 
+
 ## DISCORD_TOKEN:
 
+
 Token que corresponde al bot de discord que se crea en la pagina de discord developers, crea una aplicacion y te diriges a la ventana de bot hay lo encontraras en el boton Reset Token.
+
+3. Ejecuta el bot:
+
 
 ## APPLICATION_ID
 
@@ -64,18 +71,20 @@ Ejecuta el bot con al alguna de esta opciones:
   npm run start
   bun start
   yarn start
-```
+````
 
-Si todo está correcto, verás en la consola:
+## Si todo está correcto, verás en la consola:
 
     ✅ Bot conectado como [tu_bot]
+
+````
 
 🧩 Estructura del Proyecto
 
 bitbot/
 ├── index.js # Lógica principal del bot
 ├── .env # Variables de entorno (no subir a Git)
-├── .gitignore # Archivos y directorios que no queremos subir al repo  
+├── .gitignore # Archivos y directorios que no queremos subir al repo
 ├── package.json # Configuración del proyecto y dependencias
 └── README.md # Este archivo
 
@@ -84,19 +93,22 @@ bitbot/
 ¿Te interesa aprender sobre control de versiones y desarrollo colaborativo? ¡Este proyecto es una excelente oportunidad para empezar!
 Cómo contribuir:
 
-    Haz un fork del repositorio.
+   Haz un fork del repositorio.
 
-    Crea una nueva rama:
+   Crea una nueva rama:
 
+
+```bash
 git checkout -b mi-nueva-funcionalidad
 
-Realiza tus cambios y verifica que todo funcione correctamente.
+# Realiza tus cambios y verifica que todo funcione correctamente.
 
-Sube tus cambios:
+# Sube tus cambios:
 
-    git push origin mi-nueva-funcionalidad
+   git push origin mi-nueva-funcionalidad
 
-    Abre un pull request desde GitHub.
+   # Abre un pull request desde GitHub.
+````
 
     💡 Asegúrate de que tus cambios estén bien documentados y enfocados en mejorar la funcionalidad o la claridad del proyecto.
 
