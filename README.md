@@ -38,49 +38,60 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado:
 ```bash
    git clone https://github.com/TeewsPepper/bitbot.git
    cd bitbot
-
+```
 
 2. Instala las dependencias:
 
 ```bash
 npm install
+```
 
+4. Configuracion de Environment
 
-# Configura el entorno: Crea un archivo .env en la raíz del proyecto y agrega lo siguiente:
+   Configura el entorno: Duplica el archico .env.template y cambia el nombre a .env:
 
-DISCORD_TOKEN=tu_token_aqui
-APPLICATION_ID=tu_id_de_aplicacion_aqui
-CANAL_BIENVENIDA_ID=id_del_canal_de_bienvenida
+## DISCORD_TOKEN:
 
-3. Ejecuta el bot:
+Token que corresponde al bot de discord que se crea en la pagina de discord developers, crea una aplicacion y te diriges a la ventana de bot hay lo encontraras en el boton Reset Token.
 
-node index.js
+## APPLICATION_ID
+
+Id de la aplicacion creada, este id lo encuentras en la url del portal de desarrollo de discord.
+
+## CANAL_BIENVENIDA_ID
+
+Id que corresponde al servidor de discord donde se va a vincular el bot se encuentra en la url de discord
+
+4. Ejecuta el bot con al alguna de esta opciones:
+
+```bash
+  npm run start
+  bun start
+  yarn start
+```
 
 ## Si todo está correcto, verás en la consola:
 
     ✅ Bot conectado como [tu_bot]
 
- ```   
-
 🧩 Estructura del Proyecto
 
 bitbot/
-├── index.js              # Lógica principal del bot
-├── .env                  # Variables de entorno (no subir a Git)
-├── .gitignore            # Archivos y directorios que no queremos subir al repo     
-├── package.json          # Configuración del proyecto y dependencias
-└── README.md             # Este archivo
+├── index.js # Lógica principal del bot
+├── .env # Variables de entorno (no subir a Git)
+├── .gitignore # Archivos y directorios que no queremos subir al repo
+├── package.json # Configuración del proyecto y dependencias
+└── README.md # Este archivo
 
 🤝 Contribuciones
 
 ¿Te interesa aprender sobre control de versiones y desarrollo colaborativo? ¡Este proyecto es una excelente oportunidad para empezar!
 Cómo contribuir:
 
-    Haz un fork del repositorio.
+Haz un fork del repositorio.
 
-    Crea una nueva rama:
+Crea una nueva rama:
 
-    
 ```bash
 git checkout -b mi-nueva-funcionalidad
 
@@ -88,10 +99,11 @@ git checkout -b mi-nueva-funcionalidad
 
 # Sube tus cambios:
 
-    git push origin mi-nueva-funcionalidad
+   git push origin mi-nueva-funcionalidad
 
-    # Abre un pull request desde GitHub.
+   # Abre un pull request desde GitHub.
 ```
+
     💡 Asegúrate de que tus cambios estén bien documentados y enfocados en mejorar la funcionalidad o la claridad del proyecto.
 
 🧠 Nota final
