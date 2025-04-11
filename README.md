@@ -42,20 +42,17 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado:
 
 2. Instala las dependencias:
 
-````bash
+```bash
 npm install
+```
 
+4. Configuracion de Environment
 
-Configura el entorno: Duplica el archico .env.template y cambia el nombre a .env:
-
+   Configura el entorno: Duplica el archico .env.template y cambia el nombre a .env:
 
 ## DISCORD_TOKEN:
 
-
 Token que corresponde al bot de discord que se crea en la pagina de discord developers, crea una aplicacion y te diriges a la ventana de bot hay lo encontraras en el boton Reset Token.
-
-3. Ejecuta el bot:
-
 
 ## APPLICATION_ID
 
@@ -65,19 +62,17 @@ Id de la aplicacion creada, este id lo encuentras en la url del portal de desarr
 
 Id que corresponde al servidor de discord donde se va a vincular el bot se encuentra en la url de discord
 
-Ejecuta el bot con al alguna de esta opciones:
+4. Ejecuta el bot con al alguna de esta opciones:
 
 ```bash
   npm run start
   bun start
   yarn start
-````
+```
 
 ## Si todo está correcto, verás en la consola:
 
     ✅ Bot conectado como [tu_bot]
-
-````
 
 🧩 Estructura del Proyecto
 
@@ -93,10 +88,9 @@ bitbot/
 ¿Te interesa aprender sobre control de versiones y desarrollo colaborativo? ¡Este proyecto es una excelente oportunidad para empezar!
 Cómo contribuir:
 
-   Haz un fork del repositorio.
+Haz un fork del repositorio.
 
-   Crea una nueva rama:
-
+Crea una nueva rama:
 
 ```bash
 git checkout -b mi-nueva-funcionalidad
@@ -108,7 +102,7 @@ git checkout -b mi-nueva-funcionalidad
    git push origin mi-nueva-funcionalidad
 
    # Abre un pull request desde GitHub.
-````
+```
 
     💡 Asegúrate de que tus cambios estén bien documentados y enfocados en mejorar la funcionalidad o la claridad del proyecto.
 
