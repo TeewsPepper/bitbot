@@ -9,6 +9,7 @@ import {
   PermissionsBitField,
 } from 'discord.js';
 import help from './commands/generales/help.js';
+import ban from './commands/moderacion/ban.js';
 
 
 
@@ -224,19 +225,9 @@ client.on('interactionCreate', async interaction => {
       break;
     }
 
-    case 'ban': {
-      if (!interaction.member.permissions.has(PermissionsBitField.Flags.BanMembers)) {
-        return interaction.reply({ content: '🚫 No tenés permiso para banear.', flags: 64 });
-      }
-      const user = interaction.options.getUser('usuario');
-      const reason = interaction.options.getString('razon') || 'Sin razón';
-      const member = interaction.guild.members.cache.get(user.id);
-      if (!member) return interaction.reply({ content: '❌ Usuario no encontrado.', flags: 64 });
-
-      await member.ban({ reason: reason });
-      await interaction.reply(`🔨 ${user.tag} fue baneado. Razón: ${razon}`);
+    case 'ban':
+      ban(interaction);
       break;
-    }
 
     case 'kick': {
       if (!interaction.member.permissions.has(PermissionsBitField.Flags.KickMembers)) {
