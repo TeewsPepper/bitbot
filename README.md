@@ -35,7 +35,7 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado:
 
 1. **Clona el repositorio**:
 
-````bash
+```bash
    git clone https://github.com/TeewsPepper/bitbot.git
    cd bitbot
 
@@ -127,6 +127,7 @@ Cómo contribuir:
 
     Crea una nueva rama:
 
+    
 ```bash
 git checkout -b mi-nueva-funcionalidad
 

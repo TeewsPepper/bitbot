@@ -1,14 +1,16 @@
-require('dotenv').config();
-const fs = require('fs');
-const path = require('path');
-const {
+import 'dotenv/config'
+import fs  from 'fs';
+import path from 'path';
+import {
   Client,
   GatewayIntentBits,
   REST,
   Routes,
   PermissionsBitField,
-} = require('discord.js');
-const { help } = require('./commands/generales/ayuda');
+} from 'discord.js';
+import help from './commands/generales/help.js';
+
+
 
 const client = new Client({
   intents: [
